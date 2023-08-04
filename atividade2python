@@ -1,0 +1,9 @@
+#2.rie um script em Python para receber dois números informados
+#pelo usuário e mostrar todos números entre eles em ordem decrescente.
+cont = float(input("infomr o valor"))
+cont = float(input("infomr o valor"))
+while cont>=0:
+    cont = float(input("informe um valor:"))
+    print(cont, end=" ")
+    cont -=1
+print("valor final é:",cont)

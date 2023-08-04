@@ -1,0 +1,34 @@
+#aplicar operadores logicos com if 
+#Leia a qtd de faltas de um aluno e sau media final
+qtd_faltas = int(input("informe a quantidade de faltas:"))
+media = float(input("informe sua media final:"))
+#condiçoes de reprovação:
+#qtd de falta maior do que 8 e media menor do que 7
+print("Resultador:", qtd_faltas>8 or media<7)
+print("*"*60)
+
+if qtd_faltas<0:
+    print("informação invalida")
+else:
+    if qtd_faltas>8 or media<7:
+        print("aluno reprovado")
+        if qtd_faltas>8 and media<7:
+            print("reprovado por media e por falta") 
+    else:
+        print("aluno aprovado")
+
+if qtd_faltas<0:
+    print("reprovado por falta")
+else:
+    if media<0:
+        print("reprovado por media")
+    
+
+
+
+
+
+
+
+
+

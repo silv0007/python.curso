@@ -1,0 +1,18 @@
+#Estruturas de decisão(Condicionais)
+#"""
+#Leia a idade do aluno e defina sua categoria de acordo com as seguintes informações:
+print("informe a sua idade para definir sua categoria")
+idade = int(input("informe sua idade do aluno:"))
+
+if idade<3:
+    print("Aluno sem categoria!")
+elif idade<=10:
+    print("aluno da categoria Infantil!")
+elif idade<=17:
+    print("Aluno da categoria Juvenil!")
+elif idade<=39:
+    print("Aluno da categoria adulta!")
+elif idade<=130:
+    print("Aluno da categoria senior!")
+else:
+    print("idade invalida!!!!!!")

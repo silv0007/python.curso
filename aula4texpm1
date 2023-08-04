@@ -1,0 +1,62 @@
+#calcular a soma dos valores do intervalo (fechado) das variaveis a e b (200)
+a = 10
+b = 20
+ac = 0
+while a<=b:
+    print(a,end=" ")
+    ac += a
+    a += 1
+print("\n0 resultado é:", ac)
+#Leia dois valores e mostre a soma do intervalo entre eles
+v1 = int(input("informe o 1° valor:"))
+v2 = int(input("informe o 2° valor:"))
+soma = 0
+if v1<v2:
+    while v1<=v2:
+        soma += v1
+        v1 += 1
+    print("o resultado é:", soma)
+
+elif v2<v1:
+    while v2<=v1:
+        soma += v2
+        v2 += 1
+    print("o resultado é:", soma)
+
+elif v1==v2:
+    soma = v1 + v2  
+print("o resultado é:", soma)
+
+#informe 5 valores pelo usuario
+soma = 0
+cont = 1
+while cont<=5:
+    valor = float(input("informe um valor positivo:"))
+    if valor<0:
+        continue #continue é uma forma de continua leitura caso nao sejo o desejado ou pedido
+    soma += valor
+    cont+=1
+print("o resultado", soma)
+# 5 negativos
+soma = 0
+cont = 1
+while cont<=5:
+    valor = float(input("informe um valor negativo:"))
+    if valor>=0:
+        continue
+    soma += valor
+    cont+=1
+print("o resultado", soma)
+print("-"*60)
+#leia 3 notas e mostre a media caso seja digitado um valor
+#negativo ou acima de 10 sera solicitado um novo valor
+soma = 0
+cont = 1 
+while cont<=3:
+    nota = float(input("infome a nota:"))
+    if nota<0 or nota>10:
+       continue
+    soma += nota
+    cont += 1
+print(f"a soma das notas informadas é: {soma} ")
+print(f"a media dos valores informados é: {soma/3:.2f}")

@@ -1,0 +1,49 @@
+#estrutura de repetição while
+cont = 0
+while cont<=10:
+    print(cont,end=" ")
+    cont = cont+2
+print("\nvalor final do contador:", cont)
+cont = 50
+while cont<=200:
+    print(cont,end=" ")
+    cont = cont+2
+print("\nvalor final é:", cont)
+print("-"*65)
+#conatgem iniciada em 10 e finalizando em 80, incrementando os valores de 10 em 10
+cont = 10
+while cont<=80:
+    print(cont, end=" ")
+    cont += 10
+print("valor final :", cont)
+print("-"*65)
+#mostre a mensagem "eu tenho que estudar" 300x
+cont = 1
+while cont<=300:
+    print(cont,"--tenho q estuda mdssss")
+    cont += 1
+print(f"coom isso aprendi que tenho que estudar:{cont}vezes")
+print("-"*65)
+#leia um numero e mostre a contagem a partir de zero ate o numero informado
+vlor_final = int(input("informe um valor:"))
+cont = 0
+while cont<=vlor_final:
+    print(cont, end=" ")
+    cont +=1 
+print("valor final é:")
+print("-"*65)
+#contagem decresente iciniando em 23 ate 0
+cont = 23
+while cont>=0:
+    print(cont, end=" ")
+    cont -=1
+print("valor final é:",cont)
+print("-"*65)
+#leia 2 numeros e mostre a contagem do intervalo dos valores informados;5 e 20
+vlr1 = int(input("informe o 1° valor:"))
+vlr2 = int(input("informe o 2° valor:"))
+cont = 1
+while vlr1<=vlr2:
+    print(vlr1, end=" ")
+    vlr1 +=1 
+print("valor final dos dois valores:")

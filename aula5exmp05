@@ -1,0 +1,49 @@
+#loop for 
+for i in range(10):
+    print(i, end=" ")
+print("\nValor final do contador:", i)
+print("-"*50)
+#contagem de 20 ate 30 usando laço FOR
+for x in range(20,31):
+    print(x, end=" ")
+print("-"*60)
+#conatgem 10 ate zero usando o laço FOR
+for i in range(10, -1, -1):
+    print(i, end=" ")
+print("-"*30)
+#leia 5 numeros interios e mostre uma mensagem quanto o numero for par
+for i in range(5):
+    num = int(input("informe um valor:"))
+    if num%2==0:
+        print("o valor informado é par:", num)
+print("."*30)
+#leia 5 numeros e some infromando é par
+soma = 0
+for i in range(5):
+    num = int(input("informe um valor:"))
+    if num%2 !=0:
+        soma +=num
+        print("o valor informado é impares:", soma)
+    
+#leia 5 numero interios e some somente os valores impares e mostre a quantidade de impares
+soma = 0
+cont = 0
+for i in range(5):
+    num = int(input("informe um valor:"))
+    if num%2 !=0:
+        soma +=num
+        cont +=1
+        print("A soma dos impares e:", soma)
+print("A quantidade de imapres totais é:",cont)
+print("-"*30)
+# mostre a media aritmetica dos impares
+soma = 0
+cont = 0
+for i in range(5):
+    num = int(input("informe um valor:"))
+    if num%2 !=0:
+        soma +=num
+        cont +=1
+        print("A soma dos impares e:", soma)
+print("A quantidade de imapres totais é:",cont)
+print(f"a media aritmetica dos impares é:{soma/cont:.2f}" )
